@@ -8,6 +8,8 @@
  */
 
 (function($){
+    'use strict';
+
 	$.fn.extend({
 		select2SortableOrder: function(){
 			var $this = this.filter('[multiple]');
@@ -44,7 +46,7 @@
 			return $this;
 		},
 		select2Sortable: function(){
-			var args         = Array.prototype.slice.call(arguments, 0);
+			var args         = Array.prototype.slice.call(arguments, 0),
 			    $this        = this.filter('[multiple]'),
 			    validMethods = ['destroy'];
 
